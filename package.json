@@ -1,0 +1,28 @@
+{
+  "name": "koa-cli",
+  "version": "1.0.0",
+  "description": "该框架内容使用koa为基础，使用koa-router, koa-boadparser,",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lixuelin/koa-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lixuelin/koa-cli/issues"
+  },
+  "homepage": "https://github.com/lixuelin/koa-cli#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^8.0.8",
+    "koa-static": "^5.0.0",
+    "koa2": "^2.0.0-alpha.7",
+    "log4js": "^6.1.2"
+  }
+}
