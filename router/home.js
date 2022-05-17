@@ -1,5 +1,7 @@
 const Router = require("koa-router");
+const nodeSQL = require("node-sql");
 const HomeService = require("./../service/home/home");
+const {nodeSQL, config} = require("./../model/index");
 const router = new Router({
   prefix: "/api",
 });
