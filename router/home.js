@@ -6,7 +6,15 @@ const router = new Router({
 
 router.get("/", async (ctx) => {
   let result = await HomeService.getHome(ctx);
-  ctx.body = result;
+  nodeSQL.exec(`Select FirstName, LastName From tbl Where FirstName='Moshe'`, config, function(err, result){
+    if(err) return ctx.body={code:500,msg:"error in sql "};
+    console.log(result:{rows, field,})
+    ctx.body = {code: 200, msg:"success", data:{data:JSON.parse(result)}};
+  });
+  
+  
+  
+})
 });
 
 module.exports = router.routes();
